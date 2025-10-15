@@ -5,8 +5,8 @@ var carController = require('../controllers/cars');
 
 router.get('/', carController.getAll);
 router.post('/', carController.create);
-router.get('/:carId', carController.getCar);
-router.put('/:Id', carController.update);
-router.delete('/:carId', carController.remove);
+router.get('/:id', carController.getCar);
+router.put('/:id', carController.update);
+router.delete('/:id', carController.remove);
 
 module.exports = router;
